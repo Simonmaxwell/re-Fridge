@@ -5,6 +5,15 @@ $(document).ready(function() {
 	const APPID =  "1a6c0d8f";
 	const URL = "https://api.edamam.com/search"
 	
+	const showResults = (data) => {
+		var html = '';
+
+		for( let i =0; i < data.hits.length; i++) {
+			html += `<h5>${data.hits[i].recipe.label}</h5>`
+		}
+		$('#results').html(html);
+	}
+
 	const getRequest = (query) => { 
 		let params = {
 			app_id: APPID,
@@ -13,6 +22,7 @@ $(document).ready(function() {
 		};
 		
 		$.getJSON(URL, params, data => {
+			showResults(data);
 			console.log(data);
 		});
 	};
