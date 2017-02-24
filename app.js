@@ -11,7 +11,7 @@ $(document).ready(function() {
 			let ingredientsHtml = '';
 			for( let k = 0; k < data.hits[i].recipe.ingredientLines.length; k++) {
 				ingredientsHtml += `<li>${data.hits[i].recipe.ingredientLines[k]}</li>`
-				};
+			};
 			html += `<img src="${data.hits[i].recipe.image}">
 					<a target ="_blank" href="${data.hits[i].recipe.url}">
 					<h2>${data.hits[i].recipe.label}</h5> 
