@@ -3,6 +3,7 @@
 $(document).ready(function() {
 	const APIKEY = "f164427952ade2ca59a10717ddb7ecc2";
 	const APPID =  "1a6c0d8f";
+	const URL = "https://api.edamam.com/search"
 	
 	$("#search-form").submit(event => {
 			event.preventDefault();
