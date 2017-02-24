@@ -3,14 +3,18 @@
 $(document).ready(function() {
 	const APIKEY = "f164427952ade2ca59a10717ddb7ecc2";
 	const APPID =  "1a6c0d8f";
-	const URL = "https://api.edamam.com/search"
+	const URL = "https://api.edamam.com/search";
 	
 	const showResults = (data) => {
 		var html = '';
 
 		for( let i =0; i < data.hits.length; i++) {
-			html += `<h5>${data.hits[i].recipe.label}</h5>`
-		}
+			html += ` <img src="${data.hits[i].recipe.image}">
+					<a target ="_blank" href="${data.hits[i].recipe.shareAs}">
+					<h5>${data.hits[i].recipe.label}</h5> 
+					</a>`
+		};
+		
 		$('#results').html(html);
 	}
 
