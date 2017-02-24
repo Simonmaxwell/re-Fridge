@@ -7,12 +7,16 @@ $(document).ready(function() {
 	
 	const showResults = (data) => {
 		var html = '';
-
-		for( let i =0; i < data.hits.length; i++) {
-			html += ` <img src="${data.hits[i].recipe.image}">
-					<a target ="_blank" href="${data.hits[i].recipe.shareAs}">
-					<h5>${data.hits[i].recipe.label}</h5> 
-					</a>`
+		for( let i = 0; i < data.hits.length; i++) {
+			let ingredientsHtml = '';
+			for( let k = 0; k < data.hits[i].recipe.ingredientLines.length; k++) {
+				ingredientsHtml += `<li>${data.hits[i].recipe.ingredientLines[k]}</li>`
+				};
+			html += `<img src="${data.hits[i].recipe.image}">
+					<a target ="_blank" href="${data.hits[i].recipe.url}">
+					<h2>${data.hits[i].recipe.label}</h5> 
+					</a>
+					<ul>${ingredientsHtml}</ul>`
 		};
 		
 		$('#results').html(html);
