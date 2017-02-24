@@ -5,21 +5,21 @@ $(document).ready(function() {
 	const APPID =  "1a6c0d8f";
 	const URL = "https://api.edamam.com/search"
 	
-	$("#search-form").submit(event => {
-			event.preventDefault();
-			let query = $("#query").val();
-			getRequest(query);
-		});
-	
-		const getRequest = (query, token) => { 
-			let params = {
-				app_id: APPID,
-				app_key: APIKEY,
-				q: query
-				}
-			};
-
-		$.getJSON(URL, params, data => {
-
+	const getRequest = (query) => { 
+		let params = {
+			app_id: APPID,
+			app_key: APIKEY,
+			q: query
 		};
+		
+		$.getJSON(URL, params, data => {
+			console.log(data);
+		});
+	};
+	
+	$("#search-form").submit(event => {
+		event.preventDefault();
+		let query = $("#query").val();
+		getRequest(query);		
+	});	
 });
