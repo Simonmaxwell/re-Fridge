@@ -1,0 +1,343 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ing",
+				"ingredientsHtml"
+			],
+			[
+				"bor",
+				"border-style"
+			],
+			[
+				"shopping-",
+				"shopping-item-delete"
+			],
+			[
+				"ite",
+				"itemToAdd"
+			],
+			[
+				"un",
+				"uniqueWords"
+			],
+			[
+				"average",
+				"averageSentence"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"pad",
+				"padding-right"
+			],
+			[
+				"padd",
+				"padding-left"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 920,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Set syntax: H",
+		"selected_items":
+		[
+			[
+				"Set syntax: H",
+				"Set Syntax: HTML"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/simon-maxwell/Desktop/thinkful/Capstone/index.html",
+		"/home/simon-maxwell/Desktop/thinkful/Capstone/main.css",
+		"/home/simon-maxwell/Desktop/thinkful/Capstone/app.js",
+		"/home/simon-maxwell/Desktop/thinkful/ThinkfulTube/app.js",
+		"/home/simon-maxwell/Desktop/thinkful/text-analyzer-starter-files/quiz project/questions.txt",
+		"/home/simon-maxwell/Desktop/thinkful/ThinkfulTube/main.css",
+		"/home/simon-maxwell/Desktop/thinkful/ThinkfulTube/index.html",
+		"/home/simon-maxwell/Desktop/WeaponArts.txt",
+		"/home/simon-maxwell/Desktop/Weapons.txt",
+		"/home/simon-maxwell/Desktop/Playable Species.txt",
+		"/home/simon-maxwell/Desktop/thinkful/shopping-list/app.js",
+		"/home/simon-maxwell/Desktop/thinkful/shopping-list/main.css",
+		"/home/simon-maxwell/Desktop/thinkful/shopping-list/index.html",
+		"/home/simon-maxwell/Desktop/thinkful/text-analyzer-starter-files/app.js",
+		"/home/simon-maxwell/Desktop/thinkful/text-analyzer-starter-files/index.html",
+		"/home/simon-maxwell/Desktop/thinkful/shopping-list/README.md",
+		"/home/simon-maxwell/Desktop/redInkBlot/Source/red_inkblot.rb",
+		"/home/simon-maxwell/Desktop/redInkBlot/Source/acceptance_tests_pennmush.rb",
+		"/home/simon-maxwell/Desktop/redInkBlot/Source/main",
+		"/home/simon-maxwell/Desktop/thinkful/text-analyzer-starter-files/main.css",
+		"/home/simon-maxwell/Desktop/Navigator/internDatabase-archive/public/scripts/controllers/teamList.js",
+		"/home/simon-maxwell/Desktop/Navigator/internDatabase-archive/routes/login.js",
+		"/home/simon-maxwell/Desktop/Navigator/internDatabase-archive/fake.html",
+		"/home/simon-maxwell/Desktop/Navigator/internDatabase-archive/app.js",
+		"/home/simon-maxwell/Desktop/Navigator/internDatabase-archive/public/scripts/factories/teamManager.js",
+		"/home/simon-maxwell/Desktop/Navigator/internDatabase-archive/routes/fields.js",
+		"/home/simon-maxwell/Desktop/thinkful/attempt2/index.html",
+		"/home/simon-maxwell/Desktop/thinkful/GregsList/woop.html",
+		"/home/simon-maxwell/Desktop/thinkful/hello-world.js/app.js",
+		"/home/simon-maxwell/Desktop/thinkful/hello-world.js/index.html",
+		"/home/simon-maxwell/Desktop/thinkful/GregsList/index.html",
+		"/home/simon-maxwell/Desktop/thinkful/star-wars-responsive-challenge-starter-files/index.html",
+		"/home/simon-maxwell/Desktop/thinkful/star-wars-responsive-challenge-starter-files/float-grid.css",
+		"/home/simon-maxwell/Desktop/thinkful/responsive-grid-example-and-challenge-starter-files/index.html",
+		"/home/simon-maxwell/Desktop/thinkful/responsive-grid-example-and-challenge-starter-files/css/float-grid.css",
+		"/home/simon-maxwell/Desktop/thinkful/responsive-grid-example-and-challenge-starter-files/css/main.css",
+		"/home/simon-maxwell/Desktop/thinkful/Analog Sea /signup.html",
+		"/home/simon-maxwell/Desktop/thinkful/Analog Sea /signup.css",
+		"/home/simon-maxwell/Desktop/thinkful/GregsList/signup.css",
+		"/home/simon-maxwell/Desktop/thinkful/GregsList/signup.html",
+		"/home/simon-maxwell/Desktop/thinkful/GregsList/main.css",
+		"/home/simon-maxwell/Desktop/thinkful/attempt2/position-exercise.html",
+		"/home/simon-maxwell/Desktop/thinkful/attempt2/styles/position-page.css",
+		"/home/simon-maxwell/Desktop/thinkful/attempt2/styles/float-page.css",
+		"/home/simon-maxwell/Desktop/thinkful/attempt2/float-exercise.html",
+		"/home/simon-maxwell/Desktop/thinkful/css_layout_exercises_starter_files/display-page.css",
+		"/home/simon-maxwell/Desktop/thinkful/css_layout_exercises_starter_files/display-exercise.html",
+		"/home/simon-maxwell/Desktop/thinkful/resume.css",
+		"/home/simon-maxwell/Desktop/thinkful/SallyStudent.html",
+		"/home/simon-maxwell/Desktop/thinkful/foo.html",
+		"/home/simon-maxwell/Desktop/thinkful/about-me/main.css",
+		"/home/simon-maxwell/Desktop/thinkful/about-me/index.html",
+		"/home/simon-maxwell/Desktop/gitlab-ci.yml",
+		"/home/simon-maxwell/Desktop/.gitlab-ci.yml",
+		"/home/simon-maxwell/Desktop/EchoHome/internDatabase-archive/app.js",
+		"/home/simon-maxwell/Desktop/Navigator/internDatabase-archive/.gitlab-ci.yml",
+		"/home/simon-maxwell/Desktop/Navigator/internDatabase-archive/public/scripts/controllers/logs.js",
+		"/home/simon-maxwell/Desktop/Navigator/internDatabase-archive/public/log.html",
+		"/home/simon-maxwell/Desktop/Navigator/navigatorData/data.log",
+		"/home/simon-maxwell/Desktop/Navigator/internDatabase-archive/public/scripts/directives/fieldEntry/fieldEntryDropDown.html",
+		"/home/simon-maxwell/Desktop/Navigator/internDatabase-archive/public/scripts/directives/createTeam/createTeam.js",
+		"/home/simon-maxwell/Desktop/Navigator/internDatabase-archive/public/scripts/directives/createTeam/createTeam.html",
+		"/home/simon-maxwell/Desktop/Navigator/internDatabase-archive/public/scripts/directives/teamDetails/teamDetails.js",
+		"/home/simon-maxwell/Desktop/Navigator/internDatabase-archive/database/fieldReader.js",
+		"/home/simon-maxwell/Desktop/Navigator/internDatabase-archive/routes/api.js",
+		"/home/simon-maxwell/Desktop/Navigator/internDatabase-archive/database/interface.js",
+		"/home/simon-maxwell/Desktop/Navigator/internDatabase-archive/public/scripts/directives/dropdown/dropdown.js",
+		"/home/simon-maxwell/Desktop/Navigator/internDatabase-archive/public/scripts/controllers/fields.js",
+		"/home/simon-maxwell/Desktop/Navigator/internDatabase-archive/node_modules/socket.io-client/lib/manager.js",
+		"/home/simon-maxwell/Desktop/Navigator/internDatabase-archive/tests/protractor/createTeam-spec.js",
+		"/home/simon-maxwell/Desktop/Navigator/internDatabase-archive/tests/karma/controllerTeamList-test.js",
+		"/home/simon-maxwell/Desktop/Navigator/internDatabase-archive/tests/tape/validateTeam-test.js",
+		"/home/simon-maxwell/Desktop/Navigator/internDatabase-archive/public/views/teamList.html",
+		"/home/simon-maxwell/Desktop/Navigator/internDatabase-archive/public/fields.html",
+		"/home/simon-maxwell/Desktop/Navigator/internDatabase-archive/tests/protractor/adminField-spec.js",
+		"/home/simon-maxwell/Desktop/Navigator/internDatabase-archive/public/scripts/directives/dropdown/dropdown.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"		$(",
+			"js-text-form",
+			"4 columns",
+			"text",
+			"hero",
+			"ipyfp",
+			"log.html",
+			"logs",
+			"formattedTeam",
+			"bi-weekly",
+			"Enter Team Name",
+			"Pick Exec Sponsors",
+			"exec",
+			"client",
+			"field",
+			"/../../"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 920,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								22,
+								22
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "app.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"teamdetails",
+				"internDatabase-archive/public/scripts/directives/teamDetails/teamDetails.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "mana",
+		"selected_items":
+		[
+			[
+				"mana",
+				"Manager"
+			]
+		],
+		"width": 755.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 50.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

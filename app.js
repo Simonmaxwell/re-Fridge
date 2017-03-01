@@ -12,11 +12,13 @@ $(document).ready(function() {
 			for( let k = 0; k < data.hits[i].recipe.ingredientLines.length; k++) {
 				ingredientsHtml += `<li>${data.hits[i].recipe.ingredientLines[k]}</li>`
 			};
-			html += `<img src="${data.hits[i].recipe.image}">
+			html += `<div class="recipe recipe-box">
 					<a target ="_blank" href="${data.hits[i].recipe.url}">
+					<img src="${data.hits[i].recipe.image}">
 					<h2>${data.hits[i].recipe.label}</h5> 
 					</a>
-					<ul>${ingredientsHtml}</ul>`
+					<ul >${ingredientsHtml}</ul>
+					</div>`
 		};
 		
 		$('#results').html(html);
