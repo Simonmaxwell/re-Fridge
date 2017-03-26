@@ -7,22 +7,37 @@ $(document).ready(function() {
 	
 	const showResults = (data) => {
 		var html = '';
-		for( let i = 0; i < data.hits.length; i++) {
-			let ingredientsHtml = '';
-			for( let k = 0; k < data.hits[i].recipe.ingredientLines.length; k++) {
-				ingredientsHtml += `<li>${data.hits[i].recipe.ingredientLines[k]}</li>`
+		if (data.hits.length) { 
+			for( let i = 0; i < data.hits.length; i++) {
+				let ingredientsHtml = '';
+				for( let k = 0; k < data.hits[i].recipe.ingredientLines.length; k++) {
+					ingredientsHtml += `<li>${data.hits[i].recipe.ingredientLines[k]}</li>`
+				};
+				html += `<div class="recipe recipe-box">
+						<a target ="_blank" href="${data.hits[i].recipe.url}">
+						<img src="${data.hits[i].recipe.image}">
+						<h2>${data.hits[i].recipe.label}</h5> 
+						</a>
+						<ul >${ingredientsHtml}</ul>
+						</div>`
 			};
-			html += `<div class="recipe recipe-box">
-					<a target ="_blank" href="${data.hits[i].recipe.url}">
-					<img src="${data.hits[i].recipe.image}">
-					<h2>${data.hits[i].recipe.label}</h5> 
-					</a>
-					<ul >${ingredientsHtml}</ul>
-					</div>`
-		};
-		
+		} else { 
+			html = "No recipes found" 
+		}
 		$('#results').html(html);
+	
 	}
+
+
+	let ingredients = []
+
+	$("#add-item").submit(event => {
+		event.preventDefault();
+		ingredients.push($("#ingredient").val());
+		$("#ingredient").val("");
+		console.log(ingredients);
+	})
+
 
 	const getRequest = (query) => { 
 		let params = {
@@ -39,7 +54,8 @@ $(document).ready(function() {
 	
 	$("#search-form").submit(event => {
 		event.preventDefault();
-		let query = $("#query").val();
-		getRequest(query);		
+		let query = ingredients.join(" ");
+		getRequest(query);	
+		ingredients = [];	
 	});	
 });

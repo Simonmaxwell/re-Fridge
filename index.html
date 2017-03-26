@@ -26,8 +26,16 @@
 	<body >
 		<h1>re:Fridge</h1>
 		<h3>Enter ingredients in the search separated by commas and/or spaces.</h3>
+		<form id="add-item">
+			<input id="ingredient" type="text" placeholder="add food">
+			<button type="submit">+</button>
+		</form>
+		<form id="exclude-item">
+			<input id="nongredient" type="text" placeholder="I hate this">
+			<button type="submit">-</button>
+		</form>
 		<form id="search-form">
-			<input id="query" type="text" placeholder="	search">
+			<!-- <input id="query" type="text" placeholder="search"> -->
 			<button type="submit">Search</button>
 		</form>
 		<div id="results"></div>
