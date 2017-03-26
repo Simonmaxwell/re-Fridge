@@ -4,14 +4,18 @@ $(document).ready(function() {
 	const APIKEY = "f164427952ade2ca59a10717ddb7ecc2";
 	const APPID =  "1a6c0d8f";
 	const URL = "https://api.edamam.com/search";
-	
+	let ingredients = [];
+	let nongredients = [];
+	let fridgeManifest = '';
+
 	const showResults = (data) => {
 		var html = '';
 		if (data.hits.length) { 
 			for( let i = 0; i < data.hits.length; i++) {
 				let ingredientsHtml = '';
+				let color = 'red';
 				for( let k = 0; k < data.hits[i].recipe.ingredientLines.length; k++) {
-					ingredientsHtml += `<li>${data.hits[i].recipe.ingredientLines[k]}</li>`
+					ingredientsHtml += `<li class="${color}">${data.hits[i].recipe.ingredientLines[k]}</li>`
 				};
 				html += `<div class="recipe recipe-box">
 						<a target ="_blank" href="${data.hits[i].recipe.url}">
@@ -25,19 +29,9 @@ $(document).ready(function() {
 			html = "No recipes found" 
 		}
 		$('#results').html(html);
+		ingredients = [];
 	
 	}
-
-
-	let ingredients = []
-
-	$("#add-item").submit(event => {
-		event.preventDefault();
-		ingredients.push($("#ingredient").val());
-		$("#ingredient").val("");
-		console.log(ingredients);
-	})
-
 
 	const getRequest = (query) => { 
 		let params = {
@@ -51,11 +45,19 @@ $(document).ready(function() {
 			console.log(data);
 		});
 	};
+
+	$("#add-item").submit(event => {
+		event.preventDefault();
+		var foodItem = $("#ingredient").val();
+		fridgeManifest += `<li>${foodItem}</li>`;
+		ingredients.push(foodItem);
+		$("#fridge-manifest").html(fridgeManifest);
+		$("#ingredient").val("");
+	})
 	
 	$("#search-form").submit(event => {
 		event.preventDefault();
 		let query = ingredients.join(" ");
-		getRequest(query);	
-		ingredients = [];	
+		getRequest(query);		
 	});	
 });
