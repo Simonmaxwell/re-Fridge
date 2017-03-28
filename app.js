@@ -13,9 +13,14 @@ $(document).ready(function() {
 		if (data.hits.length) { 
 			for( let i = 0; i < data.hits.length; i++) {
 				let ingredientsHtml = '';
-				let color = 'red';
 				for( let k = 0; k < data.hits[i].recipe.ingredientLines.length; k++) {
-					ingredientsHtml += `<li class="${color}">${data.hits[i].recipe.ingredientLines[k]}</li>`
+					let color = 'red';
+					for( let j = 0; j < ingredients.length; j++) {
+						if( data.hits[i].recipe.ingredientLines[k].indexOf(ingredients[j]) != -1) {
+							color = 'black';
+						}
+					}
+					ingredientsHtml += `<li class="${color}">${data.hits[i].recipe.ingredientLines[k]}</li>`;
 				};
 				html += `<div class="recipe recipe-box">
 						<a target ="_blank" href="${data.hits[i].recipe.url}">
