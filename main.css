@@ -2,14 +2,34 @@ body {
 	margin-left: 20px;
 }
 
+.lists{
+
+}
+
+.search-area {
+	display: flex;
+}
+
 .recipe-box {
-	padding: 5px;
+	padding: 10px;
 	text-align: center;
 	box-sizing: border-box;
 	vertical-align: top;
-	border-style: dotted;
+	border-radius: 25px;
+    background: LightBlue;
+    box-shadow: 0px 0px 0px 5px #000, 0px 0px 0px 10px #fff;
 	
 }
+
+.image {
+	border-radius: 25px;
+    background: LightBlue;
+}
+
+.ingredient-list {
+
+}
+
 .red {
 	color: red;
 }
@@ -22,12 +42,18 @@ ul {
 	list-style: none;
 }
 
+h1 {
+	display: flex;
+	justify-content: center;
+}
+
 @media screen and (min-width: 414px) {
 	.recipe {
 		width: 100%;
 		display: inline-block;
 	}
 }
+
 @media screen and (min-width: 567px) {
 	.recipe {
 		width: 50%;

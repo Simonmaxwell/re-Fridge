@@ -25,20 +25,25 @@
 
 	<body >
 		<h1>re:Fridge</h1>
-		<ul id="fridge-manifest">list</ul>
+		
+		<div class="lists">
+			<ul id="fridge-manifest">list</ul>
+			<ul id="fridge-nonifest">bad-list</ul>
+		</div>
 
-		<form id="add-item">
-			<input id="ingredient" type="text" placeholder="add food">
-			<button type="submit">+</button>
-		</form>
-		<form id="exclude-item">
-			<input id="nongredient" type="text" placeholder="I hate this">
-			<button type="submit">-</button>
-		</form>
-		<form id="search-form">
-			<!-- <input id="query" type="text" placeholder="search"> -->
-			<button type="submit">Search</button>
-		</form>
+		<div class="search-area">
+			<form class="search-box" id="add-item">
+				<input id="ingredient" type="text" placeholder="Foods I have">
+				<button type="submit">+</button>
+			</form>
+			<form class="search-box" id="exclude-item">
+				<input id="nongredient" type="text" placeholder="Foods I hate">
+				<button type="submit">-</button>
+			</form>
+			<form id="search-form">
+				<button type="submit">Search</button>
+			</form>
+		</div>
 		<div id="results"></div>
 		
 	</body>

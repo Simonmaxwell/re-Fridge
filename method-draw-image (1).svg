@@ -1,0 +1,18 @@
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_6" height="81" width="140" y="49" x="220" stroke-width="1.5" stroke="#fff" fill="#000"/>
+  <rect id="svg_7" height="147" width="140" y="136" x="220" stroke-width="1.5" stroke="#fff" fill="#000"/>
+  <rect id="svg_8" height="60" width="10" y="58.5" x="231" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <rect id="svg_9" height="82" width="10" y="146" x="231" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <text stroke="#000" transform="matrix(0.8742763914369842,0,0,1.767611992580812,14.486966551004777,92.9312943852415) " font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Junction, sans-serif" font-size="32" id="svg_11" y="98.394541" x="245" stroke-width="0" fill="#fff">re:Fridge</text>
+ </g>
+</svg>
