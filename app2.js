@@ -37,7 +37,7 @@ $(document).ready(function() {
 				listOfIngredients: ingredientListItems
 			});
 		}
-	generateRecipeHtml(recipeFilter(recipes));
+		generateRecipeHtml(recipeFilter(recipes));
 	}
 
 	const colorForIngredient = (ingredients, ingredient) => {
@@ -71,13 +71,14 @@ $(document).ready(function() {
 					<img class="image" src="${recipes[i].recipeImageUrl}">
 					<h2>${recipes[i].recipeName}</h5> 
 					</a>
-					<button type="toggle"> Show Ingredients </button>
+					<button class="show-ingredients" type="toggle"> Show Ingredients </button>
 					<div class="ingredient-list">
 						<ul>${generateIngredientsHtml(recipes[i].listOfIngredients)}</ul>
 					</div>
 					</div>`
 		};
 		$("#results").html(html);
+		$(".ingredient-list").toggle();
 		ingredients = [];
 		nongredients = [];
 	};
@@ -124,10 +125,10 @@ $(document).ready(function() {
 		getRequest(query);
 		$("#fridge-manifest").html("");
 		$("#fridge-nonifest").html("");
-
 	});
 
-	$("#results").click(event => {
-		$(".ingredient-list").toggle();
+	$("#results").on("click", ".show-ingredients", function(event) {
+		console.log($(this));
+		$(this).next().toggle();
 	});
 });
