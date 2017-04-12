@@ -1,9 +1,10 @@
 body {
 	margin-left: 20px;
-	background-color: black;
 }
 
 .lists{
+	display: flex;
+	justify-content: center;
 
 }
 
@@ -13,22 +14,34 @@ body {
 
 .recipe-box {
 	margin: 2px;
-	padding: 10px;
+	padding: 1rem;
 	text-align: center;
 	box-sizing: border-box;
 	vertical-align: top;
-	border-radius: 25px;
-    background: LightBlue;
-    border: 5px white solid;
+    background: black;
 }
 
 .image {
 	border-radius: 25px;
-    background: LightBlue;
+    filter: grayscale(90%) contrast(125%) sepia(10%);
+}
+
+.image:hover {
+	transition-duration: 1s;
+	filter: grayscale(0%) contrast(100%) sepia(0%);
+
+}
+
+.recipe-name {
+	color: white !important;
 }
 
 .ingredient-list {
 
+}
+
+.white {
+	color: white;
 }
 
 .red {

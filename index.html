@@ -3,7 +3,7 @@
 
 	<head> 
 		<meta charset="UTF-8">
-		
+
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
@@ -25,10 +25,6 @@
 
 	<body >
 		<h1>re:Fridge</h1>
-		<div class="lists">
-			<ul id="fridge-manifest">list</ul>
-			<ul id="fridge-nonifest">bad-list</ul>
-		</div>
 		<div class="search-area">
 			<form class="search-box" id="add-item">
 				<input id="ingredient" type="text" placeholder="Foods I have">
@@ -38,6 +34,10 @@
 				<input id="nongredient" type="text" placeholder="Foods I hate">
 				<button type="submit">-</button>
 			</form>
+			<div class="lists">
+				<ul id="fridge-manifest">list</ul>
+				<ul id="fridge-nonifest">bad-list</ul>
+			</div>
 			<form id="search-form">
 				<button type="submit">Search</button>
 			</form>

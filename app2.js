@@ -44,7 +44,7 @@ $(document).ready(function() {
 		let color = 'red';
 		for ( let i = 0; i < ingredients.length; i++) {
 			if( ingredient.indexOf(ingredients[i]) != -1) {
-				color = 'black';
+				color = 'white';
 			};
 		}
 		return color;
@@ -69,7 +69,7 @@ $(document).ready(function() {
 			html += `<div class="recipe recipe-box">
 					<a target ="_blank" href="${recipes[i].recipeUrl}">
 					<img class="image" src="${recipes[i].recipeImageUrl}">
-					<h2>${recipes[i].recipeName}</h5> 
+					<h4 class="recipe-name">${recipes[i].recipeName}</h4> 
 					</a>
 					<button class="show-ingredients" type="toggle"> Show Ingredients </button>
 					<div class="ingredient-list">
@@ -106,7 +106,7 @@ $(document).ready(function() {
 		var foodItem = $("#ingredient").val();
 		fridgeManifest += `<li>${foodItem}</li>`;
 		ingredients.push(foodItem);
-		$("#fridge-manifest").html(fridgeManifest);
+		$("#fridge-manifest").append(fridgeManifest);
 		$("#ingredient").val("");
 	});
 
