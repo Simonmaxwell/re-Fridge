@@ -69,7 +69,7 @@ $(document).ready(function() {
 			html += `<div class="recipe recipe-box">
 					<a target ="_blank" href="${recipes[i].recipeUrl}">
 					<img class="image" src="${recipes[i].recipeImageUrl}">
-					<h4 class="recipe-name">${recipes[i].recipeName}</h4> 
+					<h3>${recipes[i].recipeName}</h3> 
 					</a>
 					<button class="show-ingredients" type="toggle"> Show Ingredients </button>
 					<div class="ingredient-list">
