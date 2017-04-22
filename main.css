@@ -57,7 +57,7 @@ a {
 	transition-duration: 1s;
 	filter: grayscale(0%) contrast(110%) sepia(0%);
 }
-.recipe-box:focus {
+.onclick {
 	transition-duration: 1s;
 	filter: grayscale(0%) contrast(110%) sepia(0%);
 }
