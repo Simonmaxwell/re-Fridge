@@ -35,12 +35,12 @@ a {
 
 .search-area {
 	position: fixed;
-	top: 0;
+	top: 11%;
 	left: 33vw;
 	width: 28vw;
 	z-index: 3;
-	
 }
+
 
 .recipe-box {
 	width: 100%;
@@ -78,14 +78,6 @@ a {
 	height: 2rem;
 }
 
-.gredient-buttons{
-	background-color: black;
-	color:white;
-	border: none;
-	font-size: 1.25rem;
-	font-weight: bold;
-}
-
 .show-ingredients:hover {
 	cursor: pointer;
 }
@@ -105,9 +97,9 @@ ul {
 	padding: 0;
 }
 
-@media screen and (min-width: 414px) {
+@media screen and (min-width: 1px) {
 	#logo{
-		left: 0vw;
+		left: .5vw;
 		width: 99vw;
 	}
 	#results {
@@ -119,8 +111,8 @@ ul {
 
 @media screen and (min-width: 567px) {
 	#logo{
-		left: 25vw;
-		width: 50vw;
+		left: 12.5vw;
+		width: 75vw;
 	}
 	#results {
 		column-count: 2;
