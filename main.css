@@ -56,6 +56,17 @@ a {
 	left:24%;
 }
 
+#open-fridge {
+	position: absolute;
+    background-color: white;
+    color: white;
+    top: 41.8%;
+    left: 9%;
+    width: 5%;
+    height: 34%;
+    border: none;
+}
+
 .recipe-box {
 	width: 100%;
 	display: inline-block;
