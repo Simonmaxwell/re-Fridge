@@ -1,15 +1,13 @@
-body {
-	background-image: url(./logo.svg);
-	background-position: top;
-	background-repeat: no-repeat;
-	background-size: 100%;
+
+.afridge{
+	height: 100vh;
+	width: 100vw;
 }
-.container {
-	height: 100%;
-	width: 100%;
-	background-image: url(./logo.svg);
-	background-repeat: no-repeat;
-	background-size: 100%;
+
+#logo {
+	position: fixed;
+	top: 0;
+	z-index: -1;
 }
 
 a {
@@ -28,14 +26,20 @@ a {
 }
 
 .lists{
-	display: flex;
-	justify-content: center;
+	z-index: 2;
+	width: 300px;
+	margin: 0 auto;
+	color: #fff;
 
 }
 
 .search-area {
-	display: flex;
-	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 33vw;
+	width: 28vw;
+	z-index: 3;
+	
 }
 
 .recipe-box {
@@ -98,13 +102,14 @@ a {
 ul {
 	list-style: none;
 	justify-content: center;
+	padding: 0;
 }
 
 @media screen and (min-width: 414px) {
-	.container{
-
+	#logo{
+		left: 0vw;
+		width: 99vw;
 	}
-
 	#results {
 		column-count: 1;
 		-webkit-column-count: 1;
@@ -113,6 +118,10 @@ ul {
 }
 
 @media screen and (min-width: 567px) {
+	#logo{
+		left: 25vw;
+		width: 50vw;
+	}
 	#results {
 		column-count: 2;
 		-webkit-column-count: 2;
@@ -121,6 +130,10 @@ ul {
 }
 
 @media screen and (min-width: 1000px) {
+	#logo{
+		left: 33vw;
+		width: 28vw;
+	}
 	#results {
 		column-count: 3;
 		-webkit-column-count: 3;

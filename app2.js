@@ -106,7 +106,7 @@ $(document).ready(function() {
 		var foodItem = $("#ingredient").val();
 		fridgeManifest += `<li>${foodItem}</li>`;
 		ingredients.push(foodItem);
-		$("#fridge-manifest").append(fridgeManifest);
+		$("#fridge-manifest").html(fridgeManifest);
 		$("#ingredient").val("");
 	});
 
