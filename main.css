@@ -2,7 +2,6 @@
 	display: none;
 }
 #logo {
-	position: fixed;
 	top: 0;
 	height: 100vh;
 	z-index: -1;
@@ -24,37 +23,37 @@ a {
 }
 
 .lists{
+	display: flex;
+	justify-content: center;
 	z-index: 2;
-	width: 300px;
-	margin: 0 auto;
 	color: #fff;
-
 }
 
+.bad-list {
+	margin-left: 4vw;
+}
 .container {
 	position: fixed;
 	top: 0;
 	height: 100vh;
-	z-index: 3;
 }
 
 #add-item {
-	display: block;
 	position: absolute;
 	top: 8%;
-	left: 33%;
+	left: 24%;
 }
 
 #exclude-item {
 	position: absolute;
-	top: 24%;
-	left: 33%;
+	top: 24%; 
+	left: 24%;
 }
 
 .lists {
 	position: absolute;
-	display: inline-block;
-	top: 50%;
+	top: 42%;
+	left:24%;
 }
 
 .recipe-box {
@@ -112,14 +111,14 @@ ul {
 	padding: 0;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 412px) {
 	#logo{
 		left: .5vw;
-		max-width: 99vw;
+		width: 99vw;
 	}
 	.container {
 		left: .5vw;
-		max-width: 99vw;
+		width: 99vw;
 	}
 	#results {
 		column-count: 1;
@@ -130,12 +129,12 @@ ul {
 
 @media screen and (min-width: 567px) {
 	#logo{
-		left: 12.5vw;
-		max-width: 75vw;
+		left: 16.5vw;
+		width: 66vw;
 	}
 	.container {
-		left: 12.5vw;
-		max-width: 75vw;
+		left: 16.5vw;
+		width: 66vw;
 	}
 	#results {
 		column-count: 2;
@@ -147,11 +146,11 @@ ul {
 @media screen and (min-width: 1000px) {
 	#logo{
 		left: 33vw;
-		max-width: 33vw;
+		width: 33vw;
 	}
 	.container {
 		left: 33vw;
-		max-width: 33vw;
+		width: 33vw;
 	}
 	#results {
 		column-count: 3;

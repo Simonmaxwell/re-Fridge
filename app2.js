@@ -125,7 +125,7 @@ $(document).ready(function() {
 		getRequest(query);
 		$("#fridge-manifest").html("");
 		$("#fridge-nonifest").html("");
-		$(".afridge").addClass("hidden");
+		$(".container").addClass("hidden");
 	});
 
 	$("#results").on("click", ".show-ingredients", function(event) {
