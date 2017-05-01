@@ -1,6 +1,21 @@
-.hidden{
-	display: none;
+#landing-page {
+	display: flex;
+	justify-content: center;
+	margin: 10vw;
+	background-color: black;
+	color: white;
+	font-weight: bold;
 }
+
+#welcome-button {
+	background-color: white;
+	color:black;
+	border: none;
+	font-weight: bold;
+	border-radius: 10px;
+	height: 2rem;
+}
+
 #logo {
 	top: 0;
 	height: 100vh;
@@ -22,7 +37,8 @@ a {
 	padding: 5px;
 }
 
-.lists{
+.lists {
+	font-weight: bold;
 	display: flex;
 	justify-content: center;
 	z-index: 2;
@@ -30,8 +46,9 @@ a {
 }
 
 .bad-list {
-	margin-left: 4vw;
+	margin-left: 4.5vw;
 }
+
 .container {
 	position: fixed;
 	top: 0;
@@ -40,20 +57,56 @@ a {
 
 #add-item {
 	position: absolute;
-	top: 8%;
-	left: 24%;
+	top: 10%;
+	left: 25%;
+}
+
+#ingredient {
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	border: solid;
+	max-width:50vw;
+}
+
+#ingredient-button {
+	position: absolute;
+	top: 10%;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	font-size: 4vw;
+	border: none;
 }
 
 #exclude-item {
 	position: absolute;
-	top: 24%; 
-	left: 24%;
+	top: 20%; 
+	left: 25%;
+}
+
+#nongredient {
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	border: solid;
+	max-width: 50vw;
+}
+
+#nongredient-button {
+	position: absolute;
+	top: 10%;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	font-size: 4vw;
+	border: none;
 }
 
 .lists {
 	position: absolute;
 	top: 42%;
-	left:24%;
+	left:25%;
 }
 
 #open-fridge {

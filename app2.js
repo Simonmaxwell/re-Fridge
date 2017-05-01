@@ -8,6 +8,9 @@ $(document).ready(function() {
 	let fridgeManifest = [];
 	let fridgeNonifest = [];
 
+	$(".container").hide();
+	$(".redo").hide();
+
 	const getRequest = (query) => { 
 		let params = {
 			app_id: APPID,
@@ -81,6 +84,8 @@ $(document).ready(function() {
 		$(".ingredient-list").toggle();
 		ingredients = [];
 		nongredients = [];
+		fridgeManifest = [];
+		fridgeNonifest = [];
 	};
 
 	const recipeFilter = (recipes) => {
@@ -100,6 +105,17 @@ $(document).ready(function() {
 		};
 		return goodRecipes;
 	};
+
+	$("#welcome-button").click(() => {
+		$("#landing-page").hide();
+		$(".container").show();
+	});
+
+	$("#redo-button").click(() => {
+		$("#results").hide();
+		$(".redo").hide();
+		$(".container").show();
+	});
 
 	$("#add-item").submit(event => {
 		event.preventDefault();
@@ -125,7 +141,9 @@ $(document).ready(function() {
 		getRequest(query);
 		$("#fridge-manifest").html("");
 		$("#fridge-nonifest").html("");
-		$(".container").addClass("hidden");
+		$(".container").hide();
+		$(".redo").show();
+		$("#results").show();
 	});
 
 	$("#results").on("click", ".show-ingredients", function(event) {

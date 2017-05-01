@@ -17,42 +17,52 @@
 		integrity="	sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 		crossorigin="anonymous">
 		</script>
+
+		<script src="https://use.fontawesome.com/ca306a4003.js"></script>
 		
 		<script src="app2.js"></script>
 		
 	<title>re:Fridge</title>
 	</head>
 
-	<body >
-			
-			<div class="container">
-				<img id="logo" src="./logo.svg">
-
-					<form class="search-box" id="add-item">
-						<input id="ingredient" type="text" placeholder="Foods I have">
-						<button class="gredient-buttons" type="submit">+</button>
-					</form>
-					<form class="search-box" id="exclude-item">
-						<input id="nongredient" type="text" placeholder="Foods I hate">
-						<button class="gredient-buttons" type="submit">-</button>
-					</form>
-
-				<form id="search-form">
-					<button id="open-fridge" type="submit">Search</button>
-				</form>
-					
-				<div class="lists">
-					<div> Foods I have
-					<ul id="fridge-manifest">list</ul>
-					</div>
-					<div class="bad-list"> Foods I hate
-					<ul id="fridge-nonifest">bad-list</ul>
-					</div>
-				</div>
-				
-			</div>
+	<body>
+		
+		<div id="landing-page">
+			Welcome to refridge blah blah ablah blah ablah
+			<button id="welcome-button">start</button>
 		</div>
-		<div id="results"></div>	
+		
+		<div class="container">
+			<img id="logo" src="./logo.svg">
+
+			<form class="search-box" id="add-item">
+				<input id="ingredient" type="text" placeholder="Foods I have">
+				<button id="ingredient-button" type="submit"><i class="fa fa-plus" aria-hidden="true"></i></button>
+			</form>
+			<form class="search-box" id="exclude-item">
+				<input id="nongredient" type="text" placeholder="Foods I hate">
+				<button id="nongredient-button" type="submit"><i class="fa fa-minus" aria-hidden="true"></i></button>
+			</form>
+			<form id="search-form">
+				<button id="open-fridge" type="submit">Search</button>
+			</form>
+				
+			<div class="lists">
+				<div> Foods I have
+					<ul id="fridge-manifest"></ul>
+				</div>
+				<div class="bad-list"> Foods I hate
+					<ul id="fridge-nonifest"></ul>
+				</div>
+			</div>	
+		</div>
+		
+		<div calss="result-container">
+			<div class="redo">
+				<button id="redo-button" type="submit">redo</button>
+			</div>
+			<div id="results"></div>	
+		</div>
 	
 	</body>
 
