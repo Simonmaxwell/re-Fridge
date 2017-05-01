@@ -57,7 +57,7 @@ a {
 
 #add-item {
 	position: absolute;
-	top: 10%;
+	top: 9%;
 	left: 25%;
 }
 
@@ -67,21 +67,22 @@ a {
 	font-weight: bold;
 	border: solid;
 	max-width:50vw;
+	height: 1.5rem;
 }
 
 #ingredient-button {
-	position: absolute;
-	top: 10%;
+	vertical-align: bottom;
+	margin-left: 1.35rem;
 	background-color: black;
 	color: white;
 	font-weight: bold;
-	font-size: 4vw;
+	font-size: 1.37rem;
 	border: none;
 }
 
 #exclude-item {
 	position: absolute;
-	top: 20%; 
+	top: 21%; 
 	left: 25%;
 }
 
@@ -91,15 +92,16 @@ a {
 	font-weight: bold;
 	border: solid;
 	max-width: 50vw;
+	height: 1.5rem;
 }
 
 #nongredient-button {
-	position: absolute;
-	top: 10%;
+	vertical-align: bottom;
+	margin-left: 1.35rem;
 	background-color: black;
 	color: white;
 	font-weight: bold;
-	font-size: 4vw;
+	font-size: 1.37rem;
 	border: none;
 }
 
@@ -213,8 +215,8 @@ ul {
 		width: 33vw;
 	}
 	.container {
-		left: 33vw;
-		width: 33vw;
+		left: 33.3vw;
+		width: 33.3vw;
 	}
 	#results {
 		column-count: 3;
