@@ -28,33 +28,35 @@
 	<body>
 		
 		<div id="landing-page">
-			Welcome to refridge blah blah ablah blah ablah
-			<button id="welcome-button">start</button>
+			<div id="landing-page-inner">
+			<div id="title">re:Fridge</div>	
+				Welcome to re:Fridge. This is a tool to help you clean out your fridge by finding you recipes that make use of any troublesome ingredients you just can't seem to get rid of. Start by adding ingredients via the top input field and the plus sign. If you're picky you can also add ingredients you don't want to show up in your recipes with the bottom field and the minus sign. When you've created your lists just hit the search button to see your recipes.
+				<div><button id="welcome-button">Start</button></div>
+			</div>
 		</div>
 		
 		<div class="container">
-			<img id="logo" src="./logo.svg">
-
-			<form class="search-box" id="add-item">
-				<input id="ingredient" type="text" placeholder="Foods I have">
-				<button id="ingredient-button" type="submit"><i class="fa fa-plus" aria-hidden="true"></i></button>
-			</form>
-			<form class="search-box" id="exclude-item">
-				<input id="nongredient" type="text" placeholder="Foods I hate">
-				<button id="nongredient-button" type="submit"><i class="fa fa-minus" aria-hidden="true"></i></button>
-			</form>
-			<form id="search-form">
-				<button id="open-fridge" type="submit">Search</button>
-			</form>
-				
-			<div class="lists">
+			<div class="gredient-container">
+				<form class="search-box" id="add-item">
+					<input id="ingredient" type="text" placeholder="Foods I have">
+					<button id="ingredient-button" type="submit"><i class="fa fa-plus" aria-hidden="true"></i></button>
+				</form>
 				<div> Foods I have
 					<ul id="fridge-manifest"></ul>
 				</div>
-				<div class="bad-list"> Foods I hate
+			</div>
+			<div class="gredient-container">
+				<form class="search-box" id="exclude-item">
+					<input id="nongredient" type="text" placeholder="Foods I hate">
+					<button id="nongredient-button" type="submit"><i class="fa fa-minus" aria-hidden="true"></i></button>
+				</form>
+				<div> Foods I hate
 					<ul id="fridge-nonifest"></ul>
 				</div>
-			</div>	
+			</div>
+			<form id="search-form">
+				<button id="open-fridge" type="submit">Search</button>
+			</form>
 		</div>
 		
 		<div calss="result-container">
