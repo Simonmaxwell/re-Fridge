@@ -3,8 +3,39 @@ html, body {
 	height: 100%;
 }
 
+nav {
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	height: 4vh;
+	width: 100%;
+	padding-top: 1vh;
+	padding-left:.5rem;
+	padding-right:.5rem;
+	padding-bottom: 0;
+	background-color: white;
+	z-index: 6;
+}
+
+.nav-button {
+	background-color: black;
+	color: white;
+	height: 3.5vh;
+	width: 31vw;
+	margin-right: 1rem;
+	font-weight: bold;
+	font-family: "Roboto";
+	border: none;
+}
+
 body {
 	margin: 0;
+}
+
+.the-bigun {
+	margin-top: 4.5vh;
+
 }
 
 #landing-page {
@@ -21,7 +52,7 @@ body {
 	align-items: center;
 	font-size: 2rem;
 	align-items: top;
-	margin-bottom: 1.5rem;
+	margin-bottom: 3vh;
 }
 
 #landing-page-inner {
@@ -38,8 +69,8 @@ body {
 #welcome-button {
 	border:none;
 	border-radius: 5px;
-	height: 1.75rem;
-	margin-top: 1.5rem;
+	height: 3.5vh;
+	margin-top: 3vh;
 	color: black;
 	background-color: white;
 }
@@ -52,10 +83,19 @@ body {
 	align-items: center;
 	color: white;
 	background-color: black;
+	padding: .5rem;
+	margin: .5rem;
+	height: 35vh;
 }
 
 .search-box {
+	;
+}
 
+#open-fridge {
+	height: 20vh;
+	padding: .5rem;
+	margin: .5rem;
 }
 
 a {
@@ -70,7 +110,8 @@ a {
 	-moz-column-fill: auto;
 	column-gap: 5px;
 	column-fill: auto;
-	padding: 5px;
+	margin-right: .7rem;
+	margin-left: .35rem;
 }
 
 .recipe-box {
@@ -79,7 +120,7 @@ a {
 	-webkit-column-break-inside: avoid;
 	-moz-column-break-inside: avoid;
 	column-break-inside: avoid;
-	margin: 2px;
+	margin: .15rem;
 	padding: 2rem;
 	text-align: center;
 	box-sizing: border-box;
@@ -93,6 +134,20 @@ a {
 	border-radius: 25px;
 	max-width: 100%;
     height: auto;	
+}
+
+.redo-image {
+	max-width: 100%;
+    height: auto;
+}
+
+.redo-button {
+	background-color: white;
+	color:black;
+	border: none;
+	font-weight: bold;
+	border-radius: 10px;
+	height: 2rem
 }
 
 .recipe-box:hover {
@@ -118,7 +173,7 @@ a {
 	font-weight: bold;
 }
 
-.red {
+.grey {
 	color: grey;
 }
 
@@ -134,6 +189,10 @@ ul {
 		-webkit-column-count: 1;
 		-moz-column-count: 1;
 	}
+
+	#redo-box {
+		max-width: 99%;
+	}
 }
 
 @media screen and (min-width: 567px) {
@@ -142,6 +201,10 @@ ul {
 		-webkit-column-count: 2;
 		-moz-column-count: 2;
 	}
+
+	#redo-box {
+		max-width: 50%;
+	}
 }
 
 @media screen and (min-width: 1000px) {
@@ -149,6 +212,10 @@ ul {
 		column-count: 3;
 		-webkit-column-count: 3;
 		-moz-column-count: 3;
+	}
+
+	#redo-box {
+		max-width: 33%;
 	}
 }
 

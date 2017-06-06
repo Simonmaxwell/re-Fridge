@@ -12,6 +12,7 @@ $(document).ready(function() {
 
 	$(".container").hide();
 	$(".redo").hide();
+	$("#redo-box").hide();
 
 	const getRequest = (query) => { 
 		let params = {
@@ -46,11 +47,11 @@ $(document).ready(function() {
 	}
 
 	const colorForIngredient = (ingredients, ingredient) => {
-		let color = 'red';
+		let color = 'grey';
 		for ( let i = 0; i < ingredients.length; i++) {
 			if( ingredient.indexOf(ingredients[i]) != -1) {
 				color = 'white';
-			};
+			};  
 		}
 		return color;
 	};
@@ -70,18 +71,23 @@ $(document).ready(function() {
 	const generateRecipeHtml = (recipes) => {
 		var html = '';
 		let ingredientsHtml = '';
-		for (let i = 0; i < recipes.length; i++) {
-			html += `<div class="recipe recipe-box">
-					<a target ="_blank" href="${recipes[i].recipeUrl}">
-					<img class="image" src="${recipes[i].recipeImageUrl}">
-					<h3>${recipes[i].recipeName}</h3> 
-					</a>
-					<button class="show-ingredients" type="toggle"> Show Ingredients </button>
-					<div class="ingredient-list">
-						<ul>${generateIngredientsHtml(recipes[i].listOfIngredients)}</ul>
-					</div>
-					</div>`
+		if (recipes.length > 0) {
+			for (let i = 0; i < recipes.length; i++) {
+				html += `<div class="recipe recipe-box">
+						<a target ="_blank" href="${recipes[i].recipeUrl}">
+						<img class="image" src="${recipes[i].recipeImageUrl}">
+						<h3>${recipes[i].recipeName}</h3> 
+						</a>
+						<button class="show-ingredients" type="toggle"> Show Ingredients </button>
+						<div class="ingredient-list">
+							<ul>${generateIngredientsHtml(recipes[i].listOfIngredients)}</ul>
+						</div>
+						</div>`
+			};				
+		} else {
+			$("#redo-box").show();
 		};
+
 		$("#results").html(html);
 		$(".ingredient-list").toggle();
 		ingredients = [];
@@ -113,11 +119,12 @@ $(document).ready(function() {
 		$(".container").show();
 	});
 
-	$("#redo-button").click(() => {
+	$(".redo-button").click(() => {
 		$("#results").hide();
 		$(".redo").hide();
 		$(".container").show();
-	});
+		$("#redo-box").hide();
+	}); 
 
 	$("#add-item").submit(event => {
 		event.preventDefault();

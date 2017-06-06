@@ -26,46 +26,54 @@
 	</head>
 
 	<body>
+		<nav>
+			<button class="nav-button" type="submit">Search</button>
+			<button id="re-fridge-button" class="nav-button" type="submit">re:Fridge</button>
+			<button id="github-button" class="nav-button" type="submit">GitHub</button>
+		</nav>
 		
-		<div id="landing-page">
-			<div id="landing-page-inner">
-			<div id="title">re:Fridge</div>	
-				Welcome to re:Fridge. This is a tool to help you clean out your fridge by finding you recipes that make use of any troublesome ingredients you just can't seem to get rid of. Start by adding ingredients via the top input field and the plus sign. If you're picky you can also add ingredients you don't want to show up in your recipes with the bottom field and the minus sign. When you've created your lists just hit the search button to see your recipes.
-				<div><button id="welcome-button">Start</button></div>
-			</div>
-		</div>
-		
-		<div class="container">
-			<div class="gredient-container">
-				<form class="search-box" id="add-item">
-					<input id="ingredient" type="text" placeholder="Foods I have">
-					<button id="ingredient-button" type="submit"><i class="fa fa-plus" aria-hidden="true"></i></button>
-				</form>
-				<div> Foods I have
-					<ul id="fridge-manifest"></ul>
+		<div class="the-bigun">
+			<div id="landing-page">
+				<div id="landing-page-inner">
+				<div id="title">re:Fridge</div>	
+					Welcome to re:Fridge. This is a tool to help you clean out your fridge by finding you recipes that make use of any troublesome ingredients you just can't seem to get rid of. Start by adding ingredients via the top input field and the plus sign. If you're picky you can also add ingredients you don't want to show up in your recipes with the bottom field and the minus sign. When you've created your lists just hit the search button to see your recipes.
+					<div><button id="welcome-button">Start</button></div>
 				</div>
 			</div>
-			<div class="gredient-container">
-				<form class="search-box" id="exclude-item">
-					<input id="nongredient" type="text" placeholder="Foods I hate">
-					<button id="nongredient-button" type="submit"><i class="fa fa-minus" aria-hidden="true"></i></button>
-				</form>
-				<div> Foods I hate
-					<ul id="fridge-nonifest"></ul>
+			
+			<div class="container">
+				<div class="gredient-container">
+					<form class="search-box" id="add-item">
+						<input id="ingredient" type="text" placeholder="Foods I have">
+						<button id="ingredient-button" type="submit"><i class="fa fa-plus" aria-hidden="true"></i></button>
+					</form>
+					<div> Foods I have
+						<ul id="fridge-manifest"></ul>
+					</div>
 				</div>
+				<div class="gredient-container">
+					<form class="search-box" id="exclude-item">
+						<input id="nongredient" type="text" placeholder="Foods I hate">
+						<button id="nongredient-button" type="submit"><i class="fa fa-minus" aria-hidden="true"></i></button>
+					</form>
+					<div> Foods I hate
+						<ul id="fridge-nonifest"></ul>
+					</div>
+				</div>
+				<form id="search-form">
+					<button id="open-fridge" type="submit">Search</button>
+				</form>
 			</div>
-			<form id="search-form">
-				<button id="open-fridge" type="submit">Search</button>
-			</form>
-		</div>
-		
-		<div calss="result-container">
-			<div class="redo">
-				<button id="redo-button" type="submit">redo</button>
+			
+			<div calss="result-container">
+				<div id="results"></div>	
+					<div id ="redo-box" class="recipe recipe-box">
+						<img class="redo-image" src="logo.svg">
+						<a><h3>No Recipes Found</h3></a>
+						<button class="redo-button" type="toggle"> Try Again </button>
+					</div>
 			</div>
-			<div id="results"></div>	
-		</div>
-	
+		<div>
 	</body>
 
 </html>
