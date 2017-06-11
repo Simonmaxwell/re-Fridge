@@ -120,6 +120,7 @@ $(document).ready(function() {
 	});
 
 	$(".search-button").click(() => {
+		$("#landing-page").hide();
 		$("#results").hide();
 		$(".redo").hide();
 		$(".container").show();
