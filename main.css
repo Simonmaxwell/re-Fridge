@@ -13,7 +13,7 @@ nav {
 	padding-top: 1vh;
 	padding-left:.5rem;
 	padding-right:.5rem;
-	padding-bottom: 0;
+	padding-bottom: .25rem;
 	background-color: white;
 	z-index: 6;
 }
@@ -97,9 +97,19 @@ body {
 }
 
 #open-fridge {
-	height: 20vh;
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	font-family: "Roboto";
+	align-items: center;
+	color: white;
+	background-color: black;
+	border: none;
+	height: 14vh;
 	padding: .5rem;
 	margin: .5rem;
+	margin-top: 0;
+	
 }
 
 a {
@@ -138,6 +148,12 @@ a {
 	border-radius: 25px;
 	max-width: 100%;
     height: auto;	
+}
+
+#redo-box {
+	width: 96%;
+	margin-left: .5rem;
+	margin-right: .5rem;
 }
 
 .redo-image {

@@ -74,8 +74,8 @@ $(document).ready(function() {
 		if (recipes.length > 0) {
 			for (let i = 0; i < recipes.length; i++) {
 				html += `<div class="recipe recipe-box">
-						<a target ="_blank" href="${recipes[i].recipeUrl}">
 						<img class="image" src="${recipes[i].recipeImageUrl}">
+						<a target ="_blank" href="${recipes[i].recipeUrl}">
 						<h3>${recipes[i].recipeName}</h3> 
 						</a>
 						<button class="show-ingredients" type="toggle"> Show Ingredients </button>
