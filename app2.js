@@ -119,12 +119,19 @@ $(document).ready(function() {
 		$(".container").show();
 	});
 
-	$(".redo-button").click(() => {
+	$(".search-button").click(() => {
 		$("#results").hide();
 		$(".redo").hide();
 		$(".container").show();
 		$("#redo-box").hide();
 	}); 
+
+	$("#re-fridge-button").click(() => {
+		$(".container").hide();
+		$(".redo").hide();
+		$("#redo-box").hide();
+		$("#landing-page").show();
+	});
 
 	$("#add-item").submit(event => {
 		event.preventDefault();

@@ -27,7 +27,7 @@
 
 	<body>
 		<nav>
-			<button class="nav-button" type="submit">Search</button>
+			<button class="nav-button search-button" type="submit">Search</button>
 			<button id="re-fridge-button" class="nav-button" type="submit">re:Fridge</button>
 			<button id="github-button" class="nav-button" type="submit">GitHub</button>
 		</nav>
@@ -47,7 +47,7 @@
 						<input id="ingredient" type="text" placeholder="Foods I have">
 						<button id="ingredient-button" type="submit"><i class="fa fa-plus" aria-hidden="true"></i></button>
 					</form>
-					<div> Foods I have
+					<div class="lists"> Foods I have
 						<ul id="fridge-manifest"></ul>
 					</div>
 				</div>
@@ -56,7 +56,7 @@
 						<input id="nongredient" type="text" placeholder="Foods I hate">
 						<button id="nongredient-button" type="submit"><i class="fa fa-minus" aria-hidden="true"></i></button>
 					</form>
-					<div> Foods I hate
+					<div class="lists"> Foods I hate
 						<ul id="fridge-nonifest"></ul>
 					</div>
 				</div>
@@ -70,7 +70,7 @@
 					<div id ="redo-box" class="recipe recipe-box">
 						<img class="redo-image" src="logo.svg">
 						<a><h3>No Recipes Found</h3></a>
-						<button class="redo-button" type="toggle"> Try Again </button>
+						<button class="redo-button search-button" type="toggle"> Try Again </button>
 					</div>
 			</div>
 		<div>

@@ -89,7 +89,11 @@ body {
 }
 
 .search-box {
-	;
+	align-items: center;
+}
+
+.lists {
+	align-items: center;
 }
 
 #open-fridge {
