@@ -3,6 +3,11 @@ html, body {
 	height: 100%;
 }
 
+h3 {
+	display: block;
+	margin-bottom:	0;
+}
+
 nav {
 	display: flex;
 	justify-content: space-between;
@@ -36,6 +41,10 @@ body {
 .the-bigun {
 	margin-top: 4.5vh;
 
+}
+
+.container {
+	margin-top: 5.5vh;
 }
 
 #landing-page {
@@ -76,11 +85,8 @@ body {
 }
 
 .gredient-container {
-	display: flex;
-	justify-content: center;
 	font-weight: bold;
 	font-family: "Roboto";
-	align-items: center;
 	color: white;
 	background-color: black;
 	padding: .5rem;
@@ -92,19 +98,21 @@ body {
 	align-items: center;
 }
 
+.gredient-button {
+	border: none;
+    color: black;
+    background-color: white;
+    height: 1.5rem;
+}
+
 .lists {
 	align-items: center;
+	overflow-y: auto;
 }
 
 #open-fridge {
 	display: flex;
 	justify-content: center;
-	font-weight: bold;
-	font-family: "Roboto";
-	align-items: center;
-	color: white;
-	background-color: black;
-	border: none;
 	height: 14vh;
 	padding: .5rem;
 	margin: .5rem;
@@ -112,9 +120,25 @@ body {
 	
 }
 
+#search-form{
+	width: 100%;
+}
+
+#the-button{
+	font-size: 2rem;
+	border: none;
+	color: white;
+	background-color: black;
+	width: 100%;
+	height: 100%;
+}
+
 a {
 	text-decoration: none;
 	color: white;
+}
+
+.result-container{
 }
 
 #results {
@@ -150,10 +174,34 @@ a {
     height: auto;	
 }
 
+#redo-container {
+	column-count: 1;
+	-webkit-column-count: 1;
+	-moz-column-count: 1;
+	-webkit-column-gap: 5px;
+	-webkit-column-fill: auto;
+	-moz-column-gap: 5px;
+	-moz-column-fill: auto;
+	column-gap: 5px;
+	column-fill: auto;
+	margin-right: .7rem;
+	margin-left: .35rem;
+}
+
 #redo-box {
-	width: 96%;
-	margin-left: .5rem;
-	margin-right: .5rem;
+	width: 100%;
+	display: inline-block;
+	-webkit-column-break-inside: avoid;
+	-moz-column-break-inside: avoid;
+	column-break-inside: avoid;
+	margin: .15rem;
+	padding: 2rem;
+	text-align: center;
+	box-sizing: border-box;
+	vertical-align: top;
+    background: black;
+    transition-duration: 1s;
+    filter: grayscale(90%) contrast(125%) sepia(10%);
 }
 
 .redo-image {
@@ -201,6 +249,7 @@ ul {
 	list-style: none;
 	justify-content: center;
 	padding: 0;
+	margin-top: .5rem;
 }
 
 @media screen and (min-width: 412px) {
@@ -208,10 +257,6 @@ ul {
 		column-count: 1;
 		-webkit-column-count: 1;
 		-moz-column-count: 1;
-	}
-
-	#redo-box {
-		max-width: 99%;
 	}
 }
 
@@ -221,10 +266,6 @@ ul {
 		-webkit-column-count: 2;
 		-moz-column-count: 2;
 	}
-
-	#redo-box {
-		max-width: 50%;
-	}
 }
 
 @media screen and (min-width: 1000px) {
@@ -232,10 +273,6 @@ ul {
 		column-count: 3;
 		-webkit-column-count: 3;
 		-moz-column-count: 3;
-	}
-
-	#redo-box {
-		max-width: 33%;
 	}
 }
 

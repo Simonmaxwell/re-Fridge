@@ -45,33 +45,39 @@
 				<div class="gredient-container">
 					<form class="search-box" id="add-item">
 						<input id="ingredient" type="text" placeholder="Foods I have">
-						<button id="ingredient-button" type="submit"><i class="fa fa-plus" aria-hidden="true"></i></button>
+						<button id="ingredient-button" class="gredient-button" type="submit"><i class="fa fa-plus" aria-hidden="true"></i></button>
 					</form>
-					<div class="lists"> Foods I have
+					<h3> Foods I have </h3>
+					<div class="lists"> 
 						<ul id="fridge-manifest"></ul>
 					</div>
 				</div>
 				<div class="gredient-container">
 					<form class="search-box" id="exclude-item">
 						<input id="nongredient" type="text" placeholder="Foods I hate">
-						<button id="nongredient-button" type="submit"><i class="fa fa-minus" aria-hidden="true"></i></button>
+						<button id="nongredient-button" class="gredient-button" type="submit"><i class="fa fa-minus" aria-hidden="true"></i></button>
 					</form>
-					<div class="lists"> Foods I hate
+					<h3> Foods I have </h3>
+					<div class="lists">
 						<ul id="fridge-nonifest"></ul>
 					</div>
 				</div>
-				<form id="search-form">
-					<button id="open-fridge" type="submit">Search</button>
-				</form>
+				<div class="gredient-container" id="open-fridge">
+					<form id="search-form">
+						<button id="the-button" type="submit">Search</button>
+					</form>
+				</div>
 			</div>
 			
-			<div calss="result-container">
-				<div id="results"></div>	
-					<div id ="redo-box" class="recipe recipe-box">
+			<div class="result-container">
+				<div id="results"></div>
+				<div id="redo-container">	
+					<div id ="redo-box">
 						<img class="redo-image" src="logo.svg">
 						<a><h3>No Recipes Found</h3></a>
 						<button class="redo-button search-button" type="toggle"> Try Again </button>
 					</div>
+				</div>
 			</div>
 		<div>
 	</body>
